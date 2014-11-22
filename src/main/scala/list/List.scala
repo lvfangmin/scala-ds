@@ -126,6 +126,7 @@ abstract sealed class List[+A] {
    * Reverses this list.
    */
   def reverse: List[A] = {
+    @tailrec
     def loop(s: List[A], d: List[A]): List[A] =
       if (s.isEmpty) d
       else loop(s.tail, d.prepend(s.head))
