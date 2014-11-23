@@ -3,6 +3,9 @@ package tree
 /**
  * Binary Indexed Tree implementation based on:
  * http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=binaryIndexedTrees
+ *
+ * Problems could be solved with Binary Indexed Tree:
+ * http://blog.wjin.org/posts/binary-indexed-tree.html
  */
 class BinaryIndexedTree(maxIdx: Int) {
   val tree = Array[Int](maxIdx)
